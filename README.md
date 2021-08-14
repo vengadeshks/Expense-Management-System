@@ -14,3 +14,7 @@ implementation of the JAX-RS reference (RESTful Web Services).
 
 
 open your web browser to `http://localhost:8080/` to see the magic..
+
+# Database Schema
+![Expense Db Schema](https://user-images.githubusercontent.com/59527753/129442687-1e44b463-ab2c-468c-b605-0c4ae596d16c.JPG)
+
