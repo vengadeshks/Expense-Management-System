@@ -101,12 +101,10 @@ function addItem3(){
 				amt.setAttribute("placeholder", "Amount");
 				amt.setAttribute("class", "form-control");
 				
-				
 				div1.appendChild(cat);
 				div2.appendChild(desc);
 				div3.appendChild(amt);
-				
-                
+				           
                 div.appendChild(div1);
 				div.appendChild(div2);
 			    div.appendChild(div3);
@@ -306,7 +304,7 @@ function appendCategory2(cate,id){
 	
 		data.categories.forEach(cat =>{
 			
-				  var z = document.createElement("option");
+				var z = document.createElement("option");
 				z.setAttribute("value",cat.categoryt_id );
 				z.innerHTML=cat.category_name ;
 			    cate.appendChild(z);

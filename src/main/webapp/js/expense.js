@@ -28,6 +28,7 @@ function listExpense(){
 	
 }
 var renderData = (data)=>{
+	
 	var role = document.getElementById("user_role").value;
     var output = ' ';
 if(role=="Admin"){
@@ -154,12 +155,16 @@ function setForm(id) {
     document.getElementById("merchant").value= exp.merchant_id;
     document.getElementById("currency").value= exp.currency_id;
 	console.log(exp.currency_id+"Currency");
+	
+	//creating category and input field for id
     exp.item.forEach(it=>{
 	    addItem2(it.category_id);
         addItemId(it.expense_item_id); 
         itemLength++;
     })
 
+
+   //setting the value for amount and description
     var cat = document.getElementsByName("category");
     var desc = document.getElementsByName("expense_description");
     var amt = document.getElementsByName("expense_amount");
@@ -190,7 +195,7 @@ function setForm(id) {
 }
  var storeData = (data)=>{
 	const urlParams = new URLSearchParams(window.location.search);
-	    var id = urlParams.get('expense_id');
+	 var id = urlParams.get('expense_id');
 	
 	data.item.forEach(it=>{
 		items.push(it.expense_item_id);
